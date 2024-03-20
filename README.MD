@@ -1,20 +1,37 @@
-# Proyecto de Ciencia de Datos
+# Análisis de Modelamiento para Predicción de Sobrepeso
 
-Este proyecto de ciencia de datos utiliza las tablas de UCI para realizar aprendizaje supervisado y no supervisado.
+## Resumen
+Este proyecto se centra en el análisis y comparación de varios modelos de aprendizaje automático para predecir la probabilidad de sobrepeso en una población. Se han evaluado tres tipos de modelos: Regresión Logística Multinomial, Random Forest y Red Neuronal, con el objetivo de determinar el más eficaz para esta tarea.
 
-## Descripción
+## Métodos de Modelamiento
+Se han utilizado los siguientes métodos para modelar y evaluar los modelos:
 
-En este proyecto, utilizaremos las tablas de UCI (nombre de la tabla) para aplicar técnicas de aprendizaje supervisado y no supervisado. El objetivo es analizar los datos, construir modelos predictivos y descubrir patrones ocultos en los datos.
+1. **Regresión Logística Multinomial**
+2. **Random Forest**
+3. **Red Neuronal**
 
-## Requisitos
+## Resultados
+Los modelos han arrojado los siguientes resultados en términos de precisión (Accuracy):
 
-Antes de ejecutar este proyecto, asegúrese de tener instalado lo siguiente:
+- **Regresión Logística Multinomial:** 60%
+- **Random Forest:** 82.26%
+- **Red Neuronal:** 89%
 
-- Python 3.11 o superior
-- Jupyter Notebook
-- Bibliotecas de Python: pandas, scikit-learn, matplotlib, etc.
+## Análisis de Resultados
+- Para la predicción única del sobrepeso, el modelo Random Forest ofrece la mayor precisión.
+- Sin embargo, al considerar todos los niveles de sobrepeso, la red neuronal es considerablemente más precisa.
+- Se destaca la importancia de variables como Smoke, SCC, Gender, Family history with overweight y FAVC en la predicción del sobrepeso.
 
-## Estructura del proyecto
+## Detalles de Implementación
+- Se ha agregado dropout a las capas de la red neuronal para evitar el sobreajuste.
+- El número de neuronas en la primera capa densa se aumentó a 128 para mejorar la capacidad de aprendizaje de la red neuronal.
 
-El proyecto está organizado de la siguiente manera:
+## Archivos
+- `Datos/`: Carpeta que contiene los datos utilizados para el análisis.
+- `1_Exploracion_datos.ipynb`: Cuaderno Jupyter con el código para el análisis exploratorio de los datos.
+- `2_aprendizaje_supervisado.ipynb`: Cuaderno Jupyter con el código para el modelamiento y análisis de resultados.
+- `README.txt`: Este archivo, que proporciona una descripción general del proyecto.
 
+## Autores
+- Eduardo Useche
+- Santiago Rodríguez Caicedo
