@@ -31,6 +31,7 @@ Los modelos han arrojado los siguientes resultados en términos de precisión (A
 - `1_Exploracion_datos.ipynb`: Cuaderno Jupyter con el código para el análisis exploratorio de los datos.
 - `2_aprendizaje_supervisado.ipynb`: Cuaderno Jupyter con el código para el modelamiento y análisis de resultados.
 - `README.txt`: Este archivo, que proporciona una descripción general del proyecto.
+- `requirement.txt`: Este archivo, que proporciona una descripción de las librerias y versiones necesarias para ejecutar los notebooks.
 
 ## Autores
 - Eduardo Useche
